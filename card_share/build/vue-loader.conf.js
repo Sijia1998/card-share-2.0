@@ -2,9 +2,10 @@
 const utils = require('./utils')
 const config = require('../config')
 const isProduction = process.env.NODE_ENV === 'production'
-const sourceMapEnabled = isProduction
-  ? config.build.productionSourceMap
-  : config.dev.cssSourceMap
+const px2rem = require('postcss-plugin-px2rem');
+const sourceMapEnabled = isProduction ?
+  config.build.productionSourceMap :
+  config.dev.cssSourceMap
 
 module.exports = {
   loaders: utils.cssLoaders({
@@ -18,5 +19,10 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
+  },
+  postcss: function () {
+    return [px2rem({
+      rootValue: 75
+    })];
   }
 }
