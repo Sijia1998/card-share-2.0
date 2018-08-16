@@ -1,5 +1,8 @@
 <template>
   <div class="swiper">
+    <div>
+      <audio src="/static/music.mp3" autoplay="autoplay" loop="loop"></audio>
+    </div>
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
       <swiper-slide class="flex">
