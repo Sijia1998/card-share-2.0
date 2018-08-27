@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "dayjs": "^1.7.5",
+    "element-ui": "^2.4.6",
     "mockjs": "^1.0.1-beta3",
     "postcss-px2rem": "^0.3.0",
     "px2rem-loader": "^0.1.9",

@@ -5,7 +5,11 @@ import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import '../src/assets/js/rem'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
+Vue.use(ElementUI)
 Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
