@@ -31,9 +31,6 @@
 </template>
 
 
-
-
-
 <script>
 // import LOGO from '../assets/logo.jpg'
 
